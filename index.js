@@ -21,6 +21,10 @@ try {
     process.exit(1);
     
 }
+app.get("/",(req,res)=>{
+ res.send("Backend is up and running");
+});
+
 app.use(express.json())
 app.use("/book",router)
 app.use("/user",Router)
