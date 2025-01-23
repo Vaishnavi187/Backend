@@ -8,7 +8,7 @@ const Router = require('./route/userroute');
 
 const app = express()
 // app.use(cors())
-app.use(cors({ origin: 'https://mystore-fkq9.onrender.com/' }));
+app.use(cors({ origin: 'https://mystore-fkq9.onrender.com' }));
 
 const PORT=process.env.PORT|| 4001
 const URL=process.env.URI
